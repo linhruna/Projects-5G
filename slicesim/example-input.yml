@@ -1,0 +1,74 @@
+settings:
+  simulation_time: 100
+  num_clients: 200
+  limit_closest_base_stations: 3
+  logging: False
+  log_file: output.txt
+
+  statistics_params:
+    warmup_ratio: 0.05
+    cooldown_ratio: 0.05
+    x:
+      min: -1500
+      max: 1500
+    y:
+      min: -1500
+      max: 1500
+
+  plotting_params:
+    plotting: True
+    plot_save: True
+    plot_show: True
+    plot_file: output.png
+    plot_file_dpi: 300
+    scatter_size: 10
+
+slices:
+  eMBB:
+    client_weight: 0.5
+    delay_tolerance: 50
+    qos_class: 1
+    bandwidth_guaranteed: 5
+    bandwidth_max: 20
+    usage_pattern:
+      distribution: uniform
+      params: [1, 5]
+
+  URLLC:
+    client_weight: 0.5
+    delay_tolerance: 10
+    qos_class: 2
+    bandwidth_guaranteed: 10
+    bandwidth_max: 30
+    usage_pattern:
+      distribution: uniform
+      params: [2, 6]
+
+mobility_patterns:
+  static:
+    client_weight: 1.0
+    distribution: uniform
+    params: [0, 0]
+
+base_stations:
+  - x: 0
+    y: 0
+    coverage: 800
+    capacity_bandwidth: 100
+    ratios:
+      eMBB: 0.5
+      URLLC: 0.5
+
+clients:
+  usage_frequency:
+    distribution: uniform
+    params: [1, 5]
+    divide_scale: 1
+
+  location:
+    x:
+      distribution: uniform
+      params: [-1000, 1000]
+    y:
+      distribution: uniform
+      params: [-1000, 1000]
