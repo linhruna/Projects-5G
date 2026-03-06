@@ -1,3 +1,10 @@
+## Overview
+This project demonstrates the deployment of a cloud-native 5G Core Network using Open5GS on a Kubernetes cluster.  
+The system uses microservices architecture where each Network Function (NF) runs as a separate containerized service.
+
+The project also integrates UERANSIM to simulate a 5G gNB and multiple User Equipments (UEs) to test connectivity through the 5G core network.
+
+
 ## Architecture
 
 The deployed 5G core includes the following network functions:
