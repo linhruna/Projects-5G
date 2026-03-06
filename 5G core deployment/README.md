@@ -1,25 +1,25 @@
+
 ## Overview
-This project demonstrates the deployment of a cloud-native 5G Core Network using Open5GS on a Kubernetes cluster.  
-The system uses microservices architecture where each Network Function (NF) runs as a separate containerized service.
+This project demonstrates the deployment of a cloud-native **5G Core Network** using **Open5GS** on **Kubernetes**.  
+The system simulates a complete 5G Standalone (SA) environment by integrating Open5GS core network functions with **UERANSIM** to emulate gNB and UE devices.
 
-The project also integrates UERANSIM to simulate a 5G gNB and multiple User Equipments (UEs) to test connectivity through the 5G core network.
+The deployment follows a **microservices architecture**, where each 5G Network Function (NF) runs as an independent containerized service. The project supports **multi-slice configuration** and enables end-to-end connectivity testing within a simulated 5G network environment.
 
+## Features
+- Cloud-native 5G Core deployment using Kubernetes
+- Containerized 5G Network Functions (AMF, SMF, UPF, etc.)
+- Simulated 5G Radio Access Network using UERANSIM
+- Multi-slice network configuration
+- Subscriber management via Open5GS WebUI
+- End-to-end connectivity testing
 
-## Architecture
+## System Architecture
+The system includes the following components:
 
-The deployed 5G core includes the following network functions:
+- **Open5GS** – 5G Core Network implementation
+- **UERANSIM** – Simulation of gNB and UE
+- **MongoDB** – Subscriber database
+- **Kubernetes** – Container orchestration platform
+- **Multus & OVS-CNI** – Multi-network configuration for 5G interfaces
 
-- AMF – Access and Mobility Management Function
-- SMF – Session Management Function
-- UPF – User Plane Function
-- NRF – Network Repository Function
-- UDM – Unified Data Management
-- AUSF – Authentication Server Function
-- NSSF – Network Slice Selection Function
-
-Supporting components:
-
-- MongoDB – stores subscriber and network data
-- Open5GS WebUI – manage subscriber profiles
-- Multus + OVS-CNI – multi-network interfaces in Kubernetes
-- UERANSIM – simulated gNB and UE
+## Project Structure
