@@ -1,8 +1,4 @@
 # SliceSim: A Simulation Suite for Network Slicing in 5G Networks
-**Abdurrahman Dilmaç** (abdurrahman.d _at_ icloud _dot_ com)  
-**Muhammed Emin Güre** (memingure _at_ gmail _dot_ com)  
-*Project Advisor:* **Prof. Tuna Tuğcu**
-***
 ### Introduction
 5G widely defines network slicing concept which aims to provide different and separate dedicated logical networks that can be customized to respective services. All slices under a cloud infrastructure are put together with their different requirements, e.g. bandwidth, latency
 
@@ -150,10 +146,3 @@ multiple service providers.
 - Generation of more test configurations
 - Video output of a running simulation
 
-### References
-1. 5GPPP Architecture Working Group. View on 5G Architecture. Version 2.0, December 2017
-2. CellMapper - https://www.cellmapper.net (10.05.2019)
-3. FatihMunicipalityGeographicInformationSystem-
-https://gis.fatih.bel.tr/webgis (13.05.2019)
-4. https://venturebeat.com/2018/12/12/decoding-5g-a-cheat-
-sheet-for-next-gen-cellular-concepts-and-jargon/ (17.03.2019)
