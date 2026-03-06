@@ -32,4 +32,3 @@ The goal is to improve network efficiency and support intelligent network manage
 
 ---
 
-## Project Structure
