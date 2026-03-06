@@ -1,49 +1,18 @@
-Open5GS Kubernetes Deployment
-Overview
+## Architecture
 
-This project demonstrates how to deploy a cloud-native 5G Core Network using Open5GS on Kubernetes.
-The deployment follows a microservices architecture, where each Network Function (NF) runs as a separate container.
+The deployed 5G core includes the following network functions:
 
-The system supports:
+- AMF – Access and Mobility Management Function
+- SMF – Session Management Function
+- UPF – User Plane Function
+- NRF – Network Repository Function
+- UDM – Unified Data Management
+- AUSF – Authentication Server Function
+- NSSF – Network Slice Selection Function
 
-Deployment of Open5GS core components (AMF, SMF, UPF, NRF, etc.)
+Supporting components:
 
-Multi-slice configuration
-
-MongoDB subscriber database
-
-WebUI for subscriber management
-
-Simulated 5G RAN using UERANSIM
-
-This project helps understand 5G Core architecture, network slicing, and cloud-native telecom deployment.
-
-Architecture
-
-Components included in this deployment:
-
-Open5GS Core Network
-
-AMF – Access and Mobility Management Function
-
-SMF – Session Management Function
-
-UPF – User Plane Function
-
-NRF – Network Repository Function
-
-Database
-
-MongoDB (stores subscriber data)
-
-RAN Simulation
-
-UERANSIM gNB
-
-UERANSIM UE
-
-Management
-
-Open5GS WebUI
-
-Deployment is orchestrated using Kubernetes manifests.
+- MongoDB – stores subscriber and network data
+- Open5GS WebUI – manage subscriber profiles
+- Multus + OVS-CNI – multi-network interfaces in Kubernetes
+- UERANSIM – simulated gNB and UE
