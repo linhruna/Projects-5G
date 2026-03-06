@@ -22,4 +22,6 @@ The system includes the following components:
 - **Kubernetes** – Container orchestration platform
 - **Multus & OVS-CNI** – Multi-network configuration for 5G interfaces
 
-## Project Structure
+## An example of Subscriber UI
+<img width="2176" height="1232" alt="image" src="https://github.com/user-attachments/assets/badc5032-5274-4130-a20c-b44f015f1fec" />
+
