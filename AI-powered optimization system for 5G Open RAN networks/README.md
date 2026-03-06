@@ -31,4 +31,10 @@ The goal is to improve network efficiency and support intelligent network manage
   - Helps reduce unnecessary resource allocation during low traffic periods.
 
 ---
+## Results 
+Output : 
+<img width="685" height="500" alt="image" src="https://github.com/user-attachments/assets/71aa614c-94c1-4ff4-bd09-19f975ac09e7" />
+Prediction : 
+<img width="471" height="499" alt="image" src="https://github.com/user-attachments/assets/01bc60f4-e0f1-4938-b2d4-6736e6503eeb" />
+
 
